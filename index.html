@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">  
+  <title>Test News homepage</title>
+
+ 
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+    
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    
+    <h2>Fullscreen Overlay Nav Example</h2>
+    <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+    <p>In this example, the navigation menu will slide in, from left to right:</p>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+         
+    </body>
+
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="" srcset="">
+    </div>
+    <div class="nav-list">
+      <li><a href="">Home</a></li>
+      <li><a href="">New</a></li>
+      <li><a href="">Popular</a></li>
+      <li><a href="">Trending</a></li>
+      <li><a href="">Categories</a></li>
+    </div>
+    <div class="menu">
+      <div class="nav-list-responsive">
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="fond-container"></div>
+    <div class="title-container">
+      <h1>The Bright Future of Web 3.0?</h1>
+    </div>
+    <div class="content">
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?</p>
+    </div>
+    <button class="read">Read more</button>
+  </div>
+  <aside>
+    <h1>  New </h1>
+    <div class="part">
+      <h2>  Hydrogen VS Electric Cars</h2>
+      <p>  Will hydrogen-fueled cars ever catch up to EVs?</p><hr>
+    </div>
+    <div class="part">
+      <h2>  The Downsides of AI Artistry</h2>      
+      <p>What are the possible adverse effects of on-demand AI image generation?</p><hr>
+    </div>
+    <div class="part">
+      <h2>Is VC Funding Drying Up?</h2>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </aside>
+
+  <!-- <div class="article"> -->
+    <div class="article article-1">
+      <img src="assets/images/image-retro-pcs.jpg" alt="" srcset="">
+      <div class="item">
+        <h1>01</h1>
+        <h3>Reviving Retro PCs</h3>
+        <p>  What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="article article-2">
+      <img src="assets/images/image-top-laptops.jpg" alt="" srcset="">
+      <div class="item">
+        <h1>02</h1>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="article article-3">
+      <img src="assets/images/image-gaming-growth.jpg" alt="" srcset="">
+      <div class="item">
+        <h1>03</h1>
+        <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  <!-- </div> -->
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ArMiarintsoa">Miarintsoa Itokiana</a>.
+  </div>
+
+  
+</body>
+</html>
